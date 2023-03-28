@@ -17,4 +17,11 @@ router.post("/seed", (req, res) => {
     });
 });
 
+// Get all data
+router.get("/", (req, res) => {
+  Department.findAll().then((deptData) => {
+    res.json(deptData);
+  });
+});
+
 module.exports = router;
