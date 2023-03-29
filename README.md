@@ -18,6 +18,10 @@ This application gives a business owner a command line tool to check and take ac
 
 [Video Demo](https://drive.google.com/file/d/1zYnUz8qN8O8VvvH6yh2nxcRBPaEBjADV/view)
 
+### Screenshot of the project
+
+![screenshot](./image/screenshot.png)
+
 ## Credits
 
 Eric Nguyen
