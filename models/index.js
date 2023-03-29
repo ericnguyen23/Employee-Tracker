@@ -3,12 +3,15 @@ const Role = require("./Role");
 const Employee = require("./Employee");
 
 // role with one department
-Role.hasOne(Department, {
-  foreignKey: "department_id",
+// Role.hasOne(Department, {
+//   foreignKey: "department_id",
+// });
+Role.belongsTo(Department, {
+  foreignKey: department_id,
 });
 
 Employee.hasOne(Role, {
   foreignKey: "role_id",
 });
 
-module.exports = { Role, Employee };
+module.exports = { Role };

@@ -19,6 +19,7 @@ router.post("/seed", (req, res) => {
 
 // Get all data
 router.get("/", (req, res) => {
+  // raw: true will return data in raw, usable format for console table
   Department.findAll({ raw: true }).then((deptData) => {
     console.table(deptData);
   });
